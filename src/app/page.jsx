@@ -85,10 +85,6 @@ export default function HomeMenuPage() {
           <h1 className="font-(family-name:--font-divinas-title) text-5xl">
             Nuestro Catalogo
           </h1>
-
-          <h2 className="font-(family-name:--font-divinas-slogan) mx-auto mt-4 max-w-8xl text-xl leading-relaxed text-black-chic xl:text-base">
-              Moda juvenil que resalta tu belleza!
-          </h2>
         </div>
 
        <div className="mt-8 flex flex-wrap justify-center gap-3">

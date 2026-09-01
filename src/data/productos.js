@@ -5,7 +5,7 @@ export const productos = [
     descripcion:
       "Polo de algodón orgánico con bordado hecho a mano por artesanas locales.",
     precio: 8.5,
-    categoria: "Ropa Damas",
+    categoria: "Ropa Invierno Dama",
     imagen: "/ropadama/ropa.png",
   },
   {
@@ -14,7 +14,7 @@ export const productos = [
     descripcion:
       "Polo de algodón orgánico con bordado hecho a mano por artesanas locales.",
     precio: 12.0,
-    categoria: "Ropa Caballeros",
+    categoria: "Ropa Verano Dama",
     imagen: "/ropadama/ropa.png",
   },
   {
@@ -23,7 +23,7 @@ export const productos = [
     descripcion:
       "Pantalón de lino ligero y transpirable, ideal para climas cálidos.",
     precio: 7.0,
-    categoria: "Pantalones",
+    categoria: "Vitaminas y suplementos",
     imagen: "/ropadama/ropa.png",
   },
   {
@@ -32,7 +32,7 @@ export const productos = [
     descripcion:
       "Pantalón de lino ligero y transpirable, ideal para climas cálidos.",
     precio: 15.5,
-    categoria: "Pantalones",
+    categoria: "Jeans",
     imagen: "/ropadama/ropa.png",
   },
   {
@@ -41,7 +41,7 @@ export const productos = [
     descripcion:
       "Vestido ligero y fresco, perfecto para días soleados y eventos casuales.",
     precio: 10.0,
-    categoria: "Ropa Damas",
+    categoria: "Ropa Verano Dama",
     imagen: "/ropadama/ropa.png",
   },
 
@@ -52,7 +52,7 @@ export const productos = [
     descripcion:
       "Polo de algodón orgánico con bordado hecho a mano por artesanas locales.",
     precio: 5.0,
-    categoria: "Ropa Damas",
+    categoria: "Ropa Invierno Dama",
     imagen: "/ropadama/ropa.png",
   },
   {
@@ -61,7 +61,7 @@ export const productos = [
     descripcion:
       "Polo de algodón orgánico con bordado hecho a mano por artesanas locales.",
     precio: 14.0,
-    categoria: "Ropa Niños",
+    categoria: "Vestidos",
     imagen: "/ropadama/ropa.png",
   },
   {
@@ -70,7 +70,7 @@ export const productos = [
     descripcion:
       "Casaca de algodón orgánico con bordado hecho a mano por artesanas locales.",
     precio: 13.5,
-    categoria: "Ropa Niños",
+    categoria: "Vestidos",
     imagen: "/ropadama/ropa.png",
   },
   {
@@ -79,7 +79,7 @@ export const productos = [
     descripcion:
       "Pantalón de lino ligero y transpirable, ideal para climas cálidos.",
     precio: 11.0,
-    categoria: "Ropa Niños",
+    categoria: "Vitaminas y suplementos",
     imagen: "/ropadama/ropa.png",
   },
 
@@ -90,7 +90,7 @@ export const productos = [
     descripcion:
       "Collar de plata esterlina con un delicado diseño floral, perfecto para ocasiones especiales.",
     precio: 16.0,
-    categoria: "Accesorios",
+    categoria: "Jeans",
     imagen: "/ropadama/ropa.png",
   },
   {
@@ -99,7 +99,7 @@ export const productos = [
     descripcion:
       "Aretes de plata con baño de oro, ideales para complementar cualquier atuendo.",
     precio: 14.5,
-    categoria: "Accesorios",
+    categoria: "Jeans",
     imagen: "/ropadama/ropa.png",
   },
   {
@@ -108,7 +108,7 @@ export const productos = [
     descripcion:
       "Vestido elegante con lentejuelas, perfecto para eventos nocturnos y celebraciones.",
     precio: 18.0,
-    categoria: "Ropa Damas",
+    categoria: "Ropa Invierno Dama",
     imagen: "/ropadama/ropa.png",
   },
   {
@@ -117,7 +117,7 @@ export const productos = [
     descripcion:
       "Vestido de algodón con volantes y estampado colorido, ideal para fiestas y celebraciones.",
     precio: 13.5,
-    categoria: "Ropa Niños",
+    categoria: "Vestidos",
     imagen: "/ropadama/ropa.png",
   },
   {
@@ -126,7 +126,7 @@ export const productos = [
     descripcion:
       "Camisa de lino ligero y transpirable, ideal para climas cálidos.",
     precio: 17.0,
-    categoria: "Ropa Caballeros",
+    categoria: "Vestidos",
     imagen: "/ropadama/ropa.png",
   },
 ];

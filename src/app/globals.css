@@ -6,6 +6,7 @@
   --color-gold-chic: #C4890D;
   --color-white-chic: #fffdf7;
   --color-caramelo-chic:#C97B36;
+  --color-pink-chic-hover:#f56299;
   
 
 }
@@ -94,9 +95,9 @@ select {
 /* ===== ESTILOS PARA BOTONES DE LAS CATEGORIAS ===== */
 .divinas-category-button-container {
   color:var(--color-black-chic);
-  background-color: var(--color-caramelo-chic);
+  background-color: var(--color-pink-chic-hover);
   opacity: 0.75;
-  border-color: var(--color-caramelo-chic);
+  border-color: var(--color-pink-chic-hover);
   
   
 }
@@ -120,20 +121,20 @@ select {
 }
 
 .divinas-category-button-active {
-  background: var(--color-pink-chic);
+  background: var(--color-pink-chic-hover);
   color: white;
   box-shadow: 0 12px 24px rgb(0 0 0 / 0.10);
 }
 
 .divinas-category-button-inactive {
   background: white;
-  color: var(--color-black-chic);
+  color: var(--color-gold-chic);
   border: 1px solid #eadccf;
 }
 
 .divinas-category-button-inactive:hover {
   background: #fffaf5;
-  color: var(--color-caramelo-chic);
+  color: var(--color-pink-chic-hover);
   box-shadow: 0 8px 18px rgb(0 0 0 / 0.07);
 }
 /* ===== SCROLLBAR ===== */
@@ -203,7 +204,7 @@ select {
 
   border-radius: 999px;
 
-  background: var(--color-pink-chic);
+  background: var(--color-pink-chic-hover);
 
   padding: 0.45rem 0.9rem;
 
@@ -212,7 +213,7 @@ select {
   letter-spacing: 0.15em;
   text-transform: uppercase;
 
-  color: var(--color-gold-chic);
+  color: white;
 }
 
 .divinas-product-price {
@@ -220,7 +221,7 @@ select {
   font-weight: 900;
   letter-spacing: -0.04em;
 
-  color: var(--color-black-chic);
+  color: var(--color-gold-chic);
 }
 
 .divinas-button-add {
@@ -237,7 +238,7 @@ select {
   font-size: 0.82rem;
   font-weight: 900;
 
-  color: var(--color-gold-chic);
+  color: var(--color-black-chic);
 
   transition:
     transform 0.25s ease,
@@ -248,7 +249,7 @@ select {
 .divinas-button-add:hover {
   transform: translateY(-2px);
 
-  background: var(--color-caramelo-chic);
+  background: var(--color-gold-chic);
 
   box-shadow:
     0 12px 24px rgb(92 61 46 / 0.18);
@@ -288,7 +289,7 @@ select {
   justify-content: center;
 
   border-radius: 999px;
-  background: var(--color-caramelo-chic);
+  background: var(--color-pink-chic);
   padding: 0.45rem 0.9rem;
   color: var(--color-black-chic);
 }

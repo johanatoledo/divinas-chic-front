@@ -55,7 +55,7 @@ export default function ProductCard({
           className="divinas-button-add"
         >
           <Plus size={14} />
-          Pedir
+          Comprar
         </button>
       )}
     </div>
