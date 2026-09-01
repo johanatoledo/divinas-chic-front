@@ -10,7 +10,7 @@ export default function ProductCard({
   const estaEnCarrito = cantidad > 0;
 
   return (
-    <article className="group cafe-product-card cafe-fade-in">
+    <article className="group divinas-product-card divinas-fade-in">
   <div className="relative h-60 w-full overflow-hidden">
     <Image
       src={producto.imagen}
@@ -20,15 +20,15 @@ export default function ProductCard({
       sizes="(max-width: 768px) 100vw,(max-width: 1200px) 50vw,25vw"
     />
 
-    <div className="cafe-product-image-overlay" />
+    <div className="divinas-product-image-overlay" />
   </div>
 
   <div className="p-5">
-    <span className="cafe-product-category">
+    <span className="divinas-product-category">
       {producto.categoria}
     </span>
 
-    <h3 className="mt-4 cafe-title text-xl">
+    <h3 className="mt-4 divinas-title text-xl">
       {producto.nombre}
     </h3>
 
@@ -37,14 +37,14 @@ export default function ProductCard({
     </p>
 
     <div className="mt-2 flex items-center justify-between gap-3">
-      <p className="cafe-product-price">
+      <p className="divinas-product-price">
         S/ {producto.precio.toFixed(2)}
       </p>
 
       {estaEnCarrito ? (
         <button
           onClick={() => onEliminar(producto.id)}
-          className="cafe-button-remove"
+          className="divinas-button-remove"
         >
           <Trash2 size={14} />
           Eliminar
@@ -52,7 +52,7 @@ export default function ProductCard({
       ) : (
         <button
           onClick={() => onAgregar(producto)}
-          className="cafe-button-add"
+          className="divinas-button-add"
         >
           <Plus size={14} />
           Pedir

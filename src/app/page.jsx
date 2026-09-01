@@ -77,18 +77,18 @@ export default function HomeMenuPage() {
   };
 
   return (
-    <main className="min-h-screen bg-pedido-orange pb-40">
+    <main className="min-h-screen bg-white-chic pb-40">
       <Navbar />
 
-      <section className="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
+      <section className="mx-auto w-full max-w-10xl px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
         <div className="text-center">
-          <h1 className="cafe-title text-5xl">
-            NUESTRA CARTA
+          <h1 className="font-(family-name:--font-divinas-title) text-5xl">
+            Nuestro Catalogo
           </h1>
 
-          <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-pedido-dark sm:text-base">
-              Café recién preparado,postres y sandwiches listos para llevar.
-          </p>
+          <h2 className="font-(family-name:--font-divinas-slogan) mx-auto mt-4 max-w-8xl text-xl leading-relaxed text-black-chic xl:text-base">
+              Moda juvenil que resalta tu belleza!
+          </h2>
         </div>
 
        <div className="mt-8 flex flex-wrap justify-center gap-3">
@@ -99,10 +99,10 @@ export default function HomeMenuPage() {
               <button
                key={categoria}
                onClick={() => setCategoriaActiva(categoria)}
-               className={`cafe-category-button ${
+               className={`divinas-category-button ${
                activa
-               ? "cafe-category-button-active"
-               : "cafe-category-button-inactive"
+               ? "divinas-category-button-active"
+               : "divinas-category-button-inactive"
              }`}
           >
             {categoria}

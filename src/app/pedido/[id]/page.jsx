@@ -50,7 +50,7 @@ export default function PedidoDetallePage() {
 
   if (cargando) {
     return (
-      <main className="min-h-screen bg-orange-50">
+      <main className="min-h-screen bg-white-chic">
         <Navbar />
         <div className="flex justify-center p-10">
           <p className="font-black text-gray-700 animate-pulse">
@@ -63,7 +63,7 @@ export default function PedidoDetallePage() {
 
   if (!pedido) {
     return (
-      <main className="min-h-screen bg-orange-50">
+      <main className="min-h-screen bg-white-chic">
         <Navbar />
         <div className="flex justify-center p-10">
           <p className="font-black text-red-600">Pedido no encontrado.</p>
@@ -93,7 +93,7 @@ export default function PedidoDetallePage() {
   // Vista de Pedido Entregado
   if (pedido.estado?.toLowerCase() === "entregado") {
     return (
-      <main className="min-h-screen bg-orange-50">
+      <main className="min-h-screen bg-white-chic">
         <Navbar />
         <section className="mx-auto max-w-3xl px-6 py-10">
           <div className="rounded-3xl bg-emerald-600 p-8 shadow-xl text-white">
@@ -113,11 +113,11 @@ export default function PedidoDetallePage() {
   }
 
   return (
-    <main className="min-h-screen bg-orange-50">
+    <main className="min-h-screen bg-white-chic">
       <Navbar />
 
       <section className="mx-auto max-w-3xl px-6 py-10">
-        <div className="rounded-3xl bg-white p-6 md:p-8 shadow-xl">
+        <div className="rounded-3xl bg-white-chic p-6 md:p-8 shadow-xl">
           {/* Encabezado del Pedido */}
           <div className="flex w-full items-center justify-center">
             <div className="flex flex-col items-center rounded-2xl bg-green-50 p-6 text-green-700 w-full border border-green-100">
@@ -134,7 +134,7 @@ export default function PedidoDetallePage() {
               <span className="font-black text-gray-900 text-sm uppercase">
                 Estado actual:{" "}
                 <span className="text-amber-700 font-extrabold">
-                  {pagoVerificado ? pedido.estado || "En preparación" : "Pendiente de pago"}
+                  {pagoVerificado ? pedido.estado || "Preparando pedido" : "Pendiente de pago"}
                 </span>
               </span>
               <span className="text-xs font-bold text-gray-500">
@@ -144,16 +144,12 @@ export default function PedidoDetallePage() {
             <p className="text-sm font-bold text-gray-800">
               Cliente: {pedido.cliente_nombre}
             </p>
-            {pedido.ubicacion && (
-              <p className="text-xs font-medium text-gray-600">
-                Ubicación: {pedido.ubicacion}
-              </p>
-            )}
+            
           </div>
 
           {/* Detalle de Productos */}
           <div className="mt-6">
-            <p className="font-black text-gray-900 text-sm">Detalle del pedido</p>
+            0<p className="font-black text-gray-900 text-sm">Detalle del pedido</p>
 
             <ul className="mt-3 space-y-2">
               {productos.map((item, index) => (

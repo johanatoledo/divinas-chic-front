@@ -1,12 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-cafe-espresso: #5c3d2e;
-  --color-cafe-chocolate: #3b2a22;
-  --color-cafe-crema: #f6eee7;
-  --color-cafe-caramelo: #c97b36;
-  --color-cafe-beige: #e7d3c1;
-  --color-cafe-oscuro: #1e1a18;
+  --color-pink-chic: #fec3d9;
+  --color-black-chic: #000000;
+  --color-gold-chic: #C4890D;
+  --color-white-chic: #fffdf7;
+  --color-caramelo-chic:#C97B36;
+  
+
 }
 
 /* ===== RESET ===== */
@@ -26,8 +27,8 @@ body {
   margin: 0;
   min-height: 100vh;
   overflow-x: hidden;
-  background-color: var(--color-cafe-crema);
-  color: var(--color-cafe-oscuro);
+  background-color: var(--color-white-chic);
+  color: var(--color-black-chic);
 
   font-family:
     Inter,
@@ -41,6 +42,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
+
 
 /* ===== ELEMENTOS ===== */
 
@@ -82,24 +84,24 @@ select {
 /* ===== SELECTION ===== */
 
 ::selection {
-  background: var(--color-cafe-caramelo);
+  background: var(--color-caramelo-chic);
   color: white;
 }
-.cafe-container {
+.divinas-container {
   width: min(100% - 1.5rem, 1320px);
   margin-inline: auto;
 }
 /* ===== ESTILOS PARA BOTONES DE LAS CATEGORIAS ===== */
-.cafe-category-button-container {
-  color:var(--color-cafe-oscuro);
-  background-color: var(--color-cafe-caramelo);
+.divinas-category-button-container {
+  color:var(--color-black-chic);
+  background-color: var(--color-caramelo-chic);
   opacity: 0.75;
-  border-color: var(--color-cafe-caramelo);
+  border-color: var(--color-caramelo-chic);
   
   
 }
 
-.cafe-category-button {
+.divinas-category-button {
   border-radius: 999px;
   padding: 0.65rem 1.25rem;
   font-size: 0.72rem;
@@ -113,25 +115,25 @@ select {
     color 0.25s ease;
 }
 
-.cafe-category-button:hover {
+.divinas-category-button:hover {
   transform: translateY(-2px);
 }
 
-.cafe-category-button-active {
-  background: var(--color-cafe-espresso);
+.divinas-category-button-active {
+  background: var(--color-pink-chic);
   color: white;
   box-shadow: 0 12px 24px rgb(0 0 0 / 0.10);
 }
 
-.cafe-category-button-inactive {
+.divinas-category-button-inactive {
   background: white;
-  color: var(--color-cafe-oscuro);
+  color: var(--color-black-chic);
   border: 1px solid #eadccf;
 }
 
-.cafe-category-button-inactive:hover {
+.divinas-category-button-inactive:hover {
   background: #fffaf5;
-  color: var(--color-cafe-caramelo);
+  color: var(--color-caramelo-chic);
   box-shadow: 0 8px 18px rgb(0 0 0 / 0.07);
 }
 /* ===== SCROLLBAR ===== */
@@ -146,19 +148,19 @@ select {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #c97b36;
+  background: #fec3d9;
   border-radius: 999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #5c3d2e;
+  background: #ca3a6f;
 }
 
 /* ===== ESTILOS TARJETAS ===== */
-.cafe-product-card {
+.divinas-product-card {
   overflow: hidden;
   border-radius: 2rem;
-  background: white;
+  background: var(--color-white-chic);
 
   border: 1px solid rgb(231 211 193 / 0.55);
 
@@ -168,21 +170,21 @@ select {
     border-color 0.35s ease;
 
   box-shadow:
-    0 10px 25px rgb(201 123 54 / 0.05),
-    0 4px 10px rgb(201 123 54 / 0.04);
+    0 10px 25px rgb(252 116 167 / 0.05),
+    0 4px 10px rgb(252 116 167 / 0.04);
 }
 
-.cafe-product-card:hover {
+.divinas-product-card:hover {
   transform: translateY(-10px);
 
-  border-color: rgb(201 123 54 / 0.18);
+  border-color: rgb(252 116 167 / 0.18);
 
   box-shadow:
-    0 30px 60px rgb(201 123 54 / 0.16),
-    0 12px 24px rgb(201 123 54 / 0.10);
+    0 30px 60px rgb(252  116 167 / 0.16),
+    0 12px 24px rgb(252 116 167 / 0.10);
 }
 
-.cafe-product-image-overlay {
+.divinas-product-image-overlay {
   position: absolute;
   inset: 0;
 
@@ -194,14 +196,14 @@ select {
     );
 }
 
-.cafe-product-category {
+.divinas-product-category {
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
   border-radius: 999px;
 
-  background: rgb(201 123 54 / 0.12);
+  background: var(--color-pink-chic);
 
   padding: 0.45rem 0.9rem;
 
@@ -210,32 +212,32 @@ select {
   letter-spacing: 0.15em;
   text-transform: uppercase;
 
-  color: var(--color-cafe-caramelo);
+  color: var(--color-gold-chic);
 }
 
-.cafe-product-price {
+.divinas-product-price {
   font-size: 1.7rem;
   font-weight: 900;
   letter-spacing: -0.04em;
 
-  color: var(--color-cafe-espresso);
+  color: var(--color-black-chic);
 }
 
-.cafe-button-add {
+.divinas-button-add {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
 
   border-radius: 1rem;
 
-  background: var(--color-cafe-espresso);
+  background: var(--color-pink-chic);
 
   padding: 0.8rem 1rem;
 
   font-size: 0.82rem;
   font-weight: 900;
 
-  color: white;
+  color: var(--color-gold-chic);
 
   transition:
     transform 0.25s ease,
@@ -243,69 +245,69 @@ select {
     box-shadow 0.25s ease;
 }
 
-.cafe-button-add:hover {
+.divinas-button-add:hover {
   transform: translateY(-2px);
 
-  background: var(--color-cafe-chocolate);
+  background: var(--color-caramelo-chic);
 
   box-shadow:
     0 12px 24px rgb(92 61 46 / 0.18);
 }
 
-.cafe-button-remove {
+.divinas-button-remove {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
 
   border-radius: 1rem;
 
-  background: #1f1f1f;
+  background: var(--color-caramelo-chic);
 
   padding: 0.8rem 1rem;
 
   font-size: 0.82rem;
   font-weight: 900;
 
-  color: white;
+  color: var(--color-black-chic);
 
   transition:
     transform 0.25s ease,
     background 0.25s ease;
 }
 
-.cafe-button-remove:hover {
+.divinas-button-remove:hover {
   transform: translateY(-2px);
 
-  background: #7f1d1d;
+  background: var(--color-caramelo-chic);
 }
 
 /* ===== ESTILOS CARRITO ===== */
-.cafe-icon-cart{
+.divinas-icon-cart{
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
   border-radius: 999px;
-  background: rgb(201 123 54 / 0.12);
+  background: var(--color-caramelo-chic);
   padding: 0.45rem 0.9rem;
-  color: var(--color-cafe-caramelo);
+  color: var(--color-black-chic);
 }
 
-.cafe-button-cart {
+.divinas-button-cart {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
 
   border-radius: 1rem;
 
-  background: var(--color-cafe-espresso);
+  background: var(--color-gold-chic);
 
   padding: 0.8rem 1rem;
 
   font-size: 0.82rem;
   font-weight: 900;
 
-  color: white;
+  color: var(--color-black-chic);
 
   transition:
     transform 0.25s ease,
@@ -313,10 +315,10 @@ select {
     box-shadow 0.25s ease;
 }
 
-.cafe-button-cart:hover {
+.divinas-button-cart:hover {
   transform: translateY(-2px);
 
-  background: var(--color-cafe-chocolate);
+  background: var(--color-caramelo-chic);
 
   box-shadow:
     0 12px 24px rgb(92 61 46 / 0.18);
@@ -324,19 +326,19 @@ select {
 /* ===== UTILIDADES ===== */
 
 @media (min-width: 768px) {
-  .cafe-container {
+  .divinas-container {
     width: min(100% - 3rem, 1320px);
   }
 }
 
-.cafe-card-hover {
+.divinas-card-hover {
   transition:
     transform 0.35s ease,
     box-shadow 0.35s ease,
     border-color 0.35s ease;
 }
 
-.cafe-card-hover:hover {
+.divinas-card-hover:hover {
   transform: translateY(-6px);
   box-shadow:
     0 20px 40px rgb(0 0 0 / 0.08),
@@ -345,7 +347,7 @@ select {
 
 /* ===== GLASS EFFECT ===== */
 
-.cafe-glass {
+.divinas-glass {
   background: rgb(255 255 255 / 0.75);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
@@ -353,13 +355,13 @@ select {
 
 /* ===== SOMBRAS ===== */
 
-.cafe-shadow {
+.divinas-shadow {
   box-shadow:
     0 10px 25px rgb(0 0 0 / 0.06),
     0 4px 10px rgb(0 0 0 / 0.04);
 }
 
-.cafe-shadow-lg {
+.divinas-shadow-lg {
   box-shadow:
     0 20px 40px rgb(0 0 0 / 0.10),
     0 10px 20px rgb(0 0 0 / 0.06);
@@ -367,11 +369,11 @@ select {
 
 /* ===== ANIMACIONES ===== */
 
-.cafe-fade-in {
-  animation: cafeFadeIn 0.4s ease;
+.divinas-fade-in {
+  animation: divinasFadeIn 0.4s ease;
 }
 
-@keyframes cafeFadeIn {
+@keyframes divinasFadeIn {
   from {
     opacity: 0;
     transform: translateY(12px);
@@ -385,14 +387,14 @@ select {
 
 /* ===== BADGES ===== */
 
-.cafe-badge {
+.divinas-badge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
   border-radius: 999px;
 
-  background: rgb(201 123 54 / 0.12);
+  background: var(--color-caramelo-chic);
 
   padding: 0.55rem 1rem;
 
@@ -401,34 +403,34 @@ select {
   letter-spacing: 0.18em;
   text-transform: uppercase;
 
-  color: var(--color-cafe-caramelo);
+  color: var(--color-black-chic);
 }
 
 /* ===== TITULOS ===== */
 
-.cafe-title {
+.divinas-title {
   font-weight: 900;
   letter-spacing: -0.04em;
-  color: var(--color-cafe-oscuro);
+  color: var(--color-black-chic);
 }
 
-.cafe-subtitle {
-  color: var(--color-cafe-oscuro);
+.divinas-subtitle {
+  color: var(--color-black-chic);
   line-height: 1.7;
 }
-.cafe-precio{
-  color: var(--color-cafe-caramelo);
+.divinas-precio{
+  color: var(--color-caramelo-chic);
 }
 
 /* ===== INPUTS ===== */
 
-.cafe-input {
+.divinas-input {
   width: 100%;
 
   border-radius: 1rem;
   border: 1px solid #e5d7ca;
 
-  background: white;
+  background: var(--color-white-chic);
 
   padding: 0.9rem 1rem;
 
@@ -437,8 +439,8 @@ select {
     box-shadow 0.25s ease;
 }
 
-.cafe-input:focus {
-  border-color: var(--color-cafe-caramelo);
+.divinas-input:focus {
+  border-color: var(--color-caramelo-chic);
 
   box-shadow:
     0 0 0 4px rgb(201 123 54 / 0.10);
@@ -446,36 +448,36 @@ select {
 
 /* ===== BOTONES ===== */
 
-.cafe-button-primary {
+.divinas-button-primary {
   border-radius: 1rem;
 
-  background: var(--color-cafe-espresso);
+  background: var(--color-caramelo-chic);
 
   padding: 0.95rem 1.4rem;
 
   font-weight: 900;
-  color: white;
+  color: var(--color-black-chic);
 
   transition:
     background 0.25s ease,
     transform 0.25s ease;
 }
 
-.cafe-button-primary:hover {
-  background: var(--color-cafe-chocolate);
+.divinas-button-primary:hover {
+  background: var(--color-gold-chic);
   transform: translateY(-2px);
 }
 
-.cafe-button-secondary {
+.divinas-button-secondary {
   border-radius: 1rem;
 
-  background: white;
+  background: var(--color-white-chic);
 
   padding: 0.9rem 1.2rem;
 
   font-weight: 800;
 
-  color: var(--color-cafe-oscuro);
+  color: var(--color-black-chic);
 
   border: 1px solid #eadccf;
 
@@ -484,7 +486,7 @@ select {
     border-color 0.25s ease;
 }
 
-.cafe-button-secondary:hover {
-  background: #fffaf5;
-  border-color: #d9c1ad;
+.divinas-button-secondary:hover {
+  background: var(--color-white-chic);
+  border-color: var(--color-caramelo-chic);
 }

@@ -102,18 +102,18 @@ export default function AdminPedidosPage() {
   };
 
   return (
-    <main className="min-h-screen bg-cafe-crema">
+    <main className="min-h-screen bg-white-chic ">
       <Navbar />
 
       <section className="mx-auto max-w-7xl px-6 py-10">
         <div className="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-end">
           <div>
-            <h1 className="text-4xl font-black text-pedido-dark">
+            <h1 className="text-4xl font-black text-black-chic">
               Panel de pedidos
             </h1>
           </div>
 
-          <button onClick={cargarPedidos} className="cafe-button-add">
+          <button onClick={cargarPedidos} className="divinas-category-button">
             Actualizar
           </button>
         </div>

@@ -21,7 +21,7 @@ async function optimizeImage(filePath) {
   ensureDir(outputFolder);
 
   const webpPath = path.join(outputFolder, `${parsed.name}.webp`);
-  const avifPath = path.join(outputFolder, `${parsed.name}.avif`);
+  
 
   await sharp(filePath)
     .resize({
@@ -31,13 +31,6 @@ async function optimizeImage(filePath) {
     .webp({ quality: 78 })
     .toFile(webpPath);
 
-  await sharp(filePath)
-    .resize({
-      width: 1400,
-      withoutEnlargement: true,
-    })
-    .avif({ quality: 55 })
-    .toFile(avifPath);
 
   console.log(`Optimizada: ${relativePath}`);
 }
