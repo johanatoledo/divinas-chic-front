@@ -4,7 +4,7 @@ import { MessageCircle } from "lucide-react";
 
 
 export default function Navbar() {
-  const whatsappNumber = "51999999999"; 
+  const whatsappNumber = "51965741718"; 
   const defaultMessage = encodeURIComponent(
     "¡Hola! Me gustaría obtener información sobre las prendas del catálogo."
   );
@@ -26,7 +26,7 @@ export default function Navbar() {
         <div className="flex items-center gap-4 text-sm ">
 
           <Link href="/admin/pedidos"   className="font-bold text-cafe-oscuro transition hover:text-cafe-caramelo">
-            Admin
+            Contactame!
           </Link>
           {/* Botón de WhatsApp */}
         <a

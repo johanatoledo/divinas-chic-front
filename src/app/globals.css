@@ -301,7 +301,7 @@ select {
 
   border-radius: 1rem;
 
-  background: var(--color-gold-chic);
+  background: var(--color-pink-chic-hover);
 
   padding: 0.8rem 1rem;
 
@@ -319,7 +319,7 @@ select {
 .divinas-button-cart:hover {
   transform: translateY(-2px);
 
-  background: var(--color-caramelo-chic);
+  background: var(--color-gold-chic);
 
   box-shadow:
     0 12px 24px rgb(92 61 46 / 0.18);
