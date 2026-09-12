@@ -3,7 +3,7 @@ import path from "path";
 import sharp from "sharp";
 
 const inputDir = path.resolve("./public");
-const outputDir = path.resolve("./assets-optimized");
+const outputDir = path.resolve("./public-optimized");
 
 const imageExtensions = [".jpg", ".jpeg", ".png"];
 
