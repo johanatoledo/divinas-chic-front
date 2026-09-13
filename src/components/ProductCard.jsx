@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { Heart, Plus, Trash2, Check } from "lucide-react";
+import {  Plus, Trash2, Check } from "lucide-react";
 
 export default function ProductCard({
   producto,
@@ -10,8 +10,7 @@ export default function ProductCard({
   moneda = "S/",
   onAgregar,
   onEliminar,
-  onToggleFavorito,
-  esFavorito = false,
+
 }) {
   const [hovered, setHovered] = useState(false);
 
@@ -50,14 +49,14 @@ export default function ProductCard({
           alt={nombre}
           fill
           sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-          className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+          className="jomi-image transition-transform duration-700 ease-out group-hover:scale-105"
         />
 
         {/* Badge */}
       {badge && (
-       <span className={`absolute left-3 top-3 z-10 px-2.5 py-1.5 text-[10px] font-medium uppercase tracking-[0.15em] text-white backdrop-blur-sm ${
+       <span className={`absolute left-3 top-3 z-10 px-2.5 py-1.5 text-[0.5rem] font-medium uppercase tracking-[0.15em] text-white backdrop-blur-sm ${
          badge.toUpperCase() === "OFERTA"
-          ? "bg-red-600/95"
+          ? "bg-jomi-red/95"
           : "bg-black/80"
          }`}
         >
@@ -123,7 +122,7 @@ export default function ProductCard({
 
         {/* Precio */}
         <div className="mt-auto flex items-baseline gap-2 pt-2">
-          <span className="text-base font-bold tracking-tight text-gray-900">
+          <span className="font-bold tracking-tight text-red">
             {moneda} {Number(precio).toFixed(2)}
           </span>
         </div>

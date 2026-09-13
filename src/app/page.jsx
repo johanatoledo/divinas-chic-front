@@ -95,10 +95,10 @@ export default function HomeMenuPage() {
               <button
                key={categoria}
                onClick={() => setCategoriaActiva(categoria)}
-               className={`divinas-category-button ${
+               className={`jomi-category-button ${
                activa
-               ? "divinas-category-button-active"
-               : "divinas-category-button-inactive"
+               ? "jomi-category-button-active"
+               : "jomi-category-button-inactive"
              }`}
           >
             {categoria}

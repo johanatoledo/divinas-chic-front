@@ -9,6 +9,7 @@
   --color-jomi-chic:#679F9F;
   --color-pink-chic-hover:#f56299;
   --color-jomi-green:#25D366;
+  --color-jomi-red:#FF2C2C;
    --font-title-jomi: var(--font-title);
   
 
@@ -91,12 +92,12 @@ select {
   background: var(--color-caramelo-chic);
   color: white;
 }
-.divinas-container {
+.jomi-container {
   width: min(100% - 1.5rem, 1320px);
   margin-inline: auto;
 }
 /* ===== ESTILOS PARA BOTONES DE LAS CATEGORIAS ===== */
-.divinas-category-button-container {
+.jomi-category-button-container {
   color:var(--color-black-chic);
   background-color: var(--color-pink-chic-hover);
   opacity: 0.75;
@@ -105,7 +106,7 @@ select {
   
 }
 
-.divinas-category-button {
+.jomi-category-button {
   border:none;
   padding: 0.65rem 1.25rem;
   font-size: 0.72rem;
@@ -119,26 +120,80 @@ select {
     color 0.25s ease;
 }
 
-.divinas-category-button:hover {
+.jomi-category-button:hover {
   transform: translateY(-2px);
 }
 
-.divinas-category-button-active {
+.jomi-category-button-active {
   background: var(--color-lila-jomi);
   color: white;
   box-shadow: 0 12px 24px rgb(0 0 0 / 0.10);
 }
 
-.divinas-category-button-inactive {
+.jomi-category-button-inactive {
   background: white;
   color: var(--color-black-chic);
   border: 1px solid #eadccf;
 }
 
-.divinas-category-button-inactive:hover {
+.jomi-category-button-inactive:hover {
   background: #fffaf5;
   color: var(--color-lila-jomi);
   box-shadow: 0 8px 18px rgb(0 0 0 / 0.07);
+}
+/* ===== ESTILOS PARA TARJETAS===== */
+.jomi-image{
+  object-fit: cover;
+  object-position: center;
+
+  .transition-transform {
+ transition-property: transform, translate, scale, rotate;
+ transition-timing-function: var(--tw-ease, var(--default-transition-timing-function) /* cubic-bezier(0.4, 0, 0.2, 1) */);
+ transition-duration: var(--tw-duration, var(--default-transition-duration) /* 150ms */);
+}
+
+.duration-700 {
+ --tw-duration: 700ms;
+ transition-duration: 700ms;
+}
+@property --tw-duration {
+ syntax: "*";
+ inherits: false;
+}
+.ease-out {
+ --tw-ease: var(--ease-out) /* cubic-bezier(0, 0, 0.2, 1) */;
+ transition-timing-function: var(--ease-out) /* cubic-bezier(0, 0, 0.2, 1) */;
+}
+@property --tw-ease {
+ syntax: "*";
+ inherits: false;
+}
+.group-hover\:scale-105 {
+ &:is(:where(.group):hover *) {
+ @media (hover: hover) {
+ --tw-scale-x: 105%;
+ --tw-scale-y: 105%;
+ --tw-scale-z: 105%;
+ scale: var(--tw-scale-x) var(--tw-scale-y);
+ }
+ }
+}
+@property --tw-scale-x {
+ syntax: "*";
+ inherits: false;
+ initial-value: 1;
+}
+@property --tw-scale-y {
+ syntax: "*";
+ inherits: false;
+ initial-value: 1;
+}
+@property --tw-scale-z {
+ syntax: "*";
+ inherits: false;
+ initial-value: 1;
+}
+
 }
 /* ===== SCROLLBAR ===== */
 
@@ -161,132 +216,16 @@ select {
 }
 
 /* ===== ESTILOS TARJETAS ===== */
-.divinas-product-card {
-  overflow: hidden;
-  border-radius: 2rem;
-  background: var(--color-white-chic);
 
-  border: 1px solid rgb(231 211 193 / 0.55);
 
-  transition:
-    transform 0.35s ease,
-    box-shadow 0.35s ease,
-    border-color 0.35s ease;
 
-  box-shadow:
-    0 10px 25px rgb(252 116 167 / 0.05),
-    0 4px 10px rgb(252 116 167 / 0.04);
-}
 
-.divinas-product-card:hover {
-  transform: translateY(-10px);
 
-  border-color: rgb(252 116 167 / 0.18);
 
-  box-shadow:
-    0 30px 60px rgb(252  116 167 / 0.16),
-    0 12px 24px rgb(252 116 167 / 0.10);
-}
 
-.divinas-product-image-overlay {
-  position: absolute;
-  inset: 0;
-
-  background:
-    linear-gradient(
-      to top,
-      rgb(0 0 0 / 0.18),
-      transparent 45%
-    );
-}
-
-.divinas-product-category {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 999px;
-
-  background: var(--color-pink-chic-hover);
-
-  padding: 0.45rem 0.9rem;
-
-  font-size: 0.7rem;
-  font-weight: 900;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-
-  color: white;
-}
-
-.divinas-product-price {
-  font-size: 1.7rem;
-  font-weight: 900;
-  letter-spacing: -0.04em;
-
-  color: var(--color-gold-chic);
-}
-
-.divinas-button-add {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-
-  border-radius: 1rem;
-
-  background: var(--color-pink-chic);
-
-  padding: 0.8rem 1rem;
-
-  font-size: 0.82rem;
-  font-weight: 900;
-
-  color: var(--color-black-chic);
-
-  transition:
-    transform 0.25s ease,
-    background 0.25s ease,
-    box-shadow 0.25s ease;
-}
-
-.divinas-button-add:hover {
-  transform: translateY(-2px);
-
-  background: var(--color-gold-chic);
-
-  box-shadow:
-    0 12px 24px rgb(92 61 46 / 0.18);
-}
-
-.divinas-button-remove {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-
-  border-radius: 1rem;
-
-  background: var(--color-caramelo-chic);
-
-  padding: 0.8rem 1rem;
-
-  font-size: 0.82rem;
-  font-weight: 900;
-
-  color: var(--color-black-chic);
-
-  transition:
-    transform 0.25s ease,
-    background 0.25s ease;
-}
-
-.divinas-button-remove:hover {
-  transform: translateY(-2px);
-
-  background: var(--color-caramelo-chic);
-}
 
 /* ===== ESTILOS CARRITO ===== */
-.divinas-icon-cart{
+.jomi-icon-cart{
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -294,24 +233,24 @@ select {
   border-radius: 999px;
   background: var(--color-pink-chic);
   padding: 0.45rem 0.9rem;
-  color: var(--color-black-chic);
+  color: var(--color-jomi-red);
 }
 
-.divinas-button-cart {
+.jomi-button-cart {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
 
-  border-radius: 1rem;
+  
 
-  background: var(--color-pink-chic-hover);
+  background: #877499;
 
   padding: 0.8rem 1rem;
 
   font-size: 0.82rem;
   font-weight: 900;
 
-  color: var(--color-black-chic);
+  color: var(--color-white-chic);
 
   transition:
     transform 0.25s ease,
@@ -319,10 +258,10 @@ select {
     box-shadow 0.25s ease;
 }
 
-.divinas-button-cart:hover {
+.jomi-button-cart:hover {
   transform: translateY(-2px);
 
-  background: var(--color-gold-chic);
+  background: var(--color-jomi-chic);
 
   box-shadow:
     0 12px 24px rgb(92 61 46 / 0.18);
@@ -330,54 +269,28 @@ select {
 /* ===== UTILIDADES ===== */
 
 @media (min-width: 768px) {
-  .divinas-container {
+  .jomi-container {
     width: min(100% - 3rem, 1320px);
   }
 }
 
-.divinas-card-hover {
-  transition:
-    transform 0.35s ease,
-    box-shadow 0.35s ease,
-    border-color 0.35s ease;
-}
-
-.divinas-card-hover:hover {
-  transform: translateY(-6px);
-  box-shadow:
-    0 20px 40px rgb(0 0 0 / 0.08),
-    0 8px 16px rgb(0 0 0 / 0.05);
-}
 
 /* ===== GLASS EFFECT ===== */
 
-.divinas-glass {
+.jomi-glass {
   background: rgb(255 255 255 / 0.75);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
 }
 
-/* ===== SOMBRAS ===== */
-
-.divinas-shadow {
-  box-shadow:
-    0 10px 25px rgb(0 0 0 / 0.06),
-    0 4px 10px rgb(0 0 0 / 0.04);
-}
-
-.divinas-shadow-lg {
-  box-shadow:
-    0 20px 40px rgb(0 0 0 / 0.10),
-    0 10px 20px rgb(0 0 0 / 0.06);
-}
 
 /* ===== ANIMACIONES ===== */
 
-.divinas-fade-in {
-  animation: divinasFadeIn 0.4s ease;
+.jomi-fade-in {
+  animation: jomiFadeIn 0.4s ease;
 }
 
-@keyframes divinasFadeIn {
+@keyframes jomiFadeIn {
   from {
     opacity: 0;
     transform: translateY(12px);
@@ -389,46 +302,10 @@ select {
   }
 }
 
-/* ===== BADGES ===== */
-
-.divinas-badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 999px;
-
-  background: var(--color-caramelo-chic);
-
-  padding: 0.55rem 1rem;
-
-  font-size: 0.72rem;
-  font-weight: 900;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-
-  color: var(--color-black-chic);
-}
-
-/* ===== TITULOS ===== */
-
-.divinas-title {
-  font-weight: 900;
-  letter-spacing: -0.04em;
-  color: var(--color-black-chic);
-}
-
-.divinas-subtitle {
-  color: var(--color-black-chic);
-  line-height: 1.7;
-}
-.divinas-precio{
-  color: var(--color-caramelo-chic);
-}
 
 /* ===== INPUTS ===== */
 
-.divinas-input {
+.jomi-input {
   width: 100%;
 
   border-radius: 1rem;
@@ -443,7 +320,7 @@ select {
     box-shadow 0.25s ease;
 }
 
-.divinas-input:focus {
+.jomi-input:focus {
   border-color: var(--color-caramelo-chic);
 
   box-shadow:
@@ -452,7 +329,7 @@ select {
 
 /* ===== BOTONES ===== */
 
-.divinas-button-primary {
+.jomi-button-primary {
   border-radius: 1rem;
 
   background: var(--color-caramelo-chic);
@@ -467,12 +344,12 @@ select {
     transform 0.25s ease;
 }
 
-.divinas-button-primary:hover {
+.jomi-button-primary:hover {
   background: var(--color-gold-chic);
   transform: translateY(-2px);
 }
 
-.divinas-button-secondary {
+.jomi-button-secondary {
   border-radius: 1rem;
 
   background: var(--color-white-chic);
@@ -490,7 +367,7 @@ select {
     border-color 0.25s ease;
 }
 
-.divinas-button-secondary:hover {
+.jomi-button-secondary:hover {
   background: var(--color-white-chic);
   border-color: var(--color-caramelo-chic);
 }
