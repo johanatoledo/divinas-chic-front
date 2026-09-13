@@ -1,27 +1,23 @@
 import { Great_Vibes, Alex_Brush } from 'next/font/google';
 import "./globals.css";
 
-const greatVibes = Great_Vibes({
-  weight: '400',
-  subsets: ['latin'],
-  variable: '--font-divinas-title',
-});
+
 
 const alexBrush = Alex_Brush({
   weight: '400',
   subsets: ['latin'],
-  variable: '--font-divinas-slogan',
+  variable: '--font-title-jomi',
 });
 export const metadata = {
   charset: "utf-8",
   viewport: "width=device-width, initial-scale=1",  
-  title: "Divinas Chic",
-  description: "Catalogo digital Divinas chic1",
+  title: "Jomi Store",
+  description: "Catalogo digital Jomi Store",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es" className={`${greatVibes.variable} ${alexBrush.variable}`}>
+    <html lang="es" className={` ${alexBrush.variable}`}>
       <body>{children}</body>
     </html>
   );

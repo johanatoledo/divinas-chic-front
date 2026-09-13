@@ -1,12 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-pink-chic: #fec3d9;
+  --color-lila-jomi: #877499;
   --color-black-chic: #000000;
   --color-gold-chic: #C4890D;
   --color-white-chic: #fffdf7;
-  --color-caramelo-chic:#C97B36;
+  --color-sandstone:#E6D4BF;
+  --color-jomi-chic:#679F9F;
   --color-pink-chic-hover:#f56299;
+  --color-jomi-green:#25D366;
+   --font-title-jomi: var(--font-title);
   
 
 }
@@ -103,7 +106,7 @@ select {
 }
 
 .divinas-category-button {
-  border-radius: 999px;
+  border:none;
   padding: 0.65rem 1.25rem;
   font-size: 0.72rem;
   font-weight: 900;
@@ -121,20 +124,20 @@ select {
 }
 
 .divinas-category-button-active {
-  background: var(--color-pink-chic-hover);
+  background: var(--color-lila-jomi);
   color: white;
   box-shadow: 0 12px 24px rgb(0 0 0 / 0.10);
 }
 
 .divinas-category-button-inactive {
   background: white;
-  color: var(--color-gold-chic);
+  color: var(--color-black-chic);
   border: 1px solid #eadccf;
 }
 
 .divinas-category-button-inactive:hover {
   background: #fffaf5;
-  color: var(--color-pink-chic-hover);
+  color: var(--color-lila-jomi);
   box-shadow: 0 8px 18px rgb(0 0 0 / 0.07);
 }
 /* ===== SCROLLBAR ===== */
@@ -149,12 +152,12 @@ select {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #fec3d9;
+  background: #877499;
   border-radius: 999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ca3a6f;
+  background: #679F9F;
 }
 
 /* ===== ESTILOS TARJETAS ===== */

@@ -11,12 +11,12 @@ export default function Navbar() {
   
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${defaultMessage}`;
   return (
-    <header className="sticky top-0 z-30   bg-pink-chic/70 backdrop-blur-md">
+    <header className="sticky top-0 z-30   bg-white-chic/70 backdrop-blur-md">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2">
         <Link href="/" >
           <Image
-             src="/branding/logodivinas.png"
-             alt="Divinas Chic"
+             src="/branding/logojomistore.png"
+             alt="Jomi Store"
              width={200}
              height={200}
              className="object-contain"
@@ -33,11 +33,11 @@ export default function Navbar() {
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold px-2 py-2 rounded-full shadow-md transition-all duration-300 hover:scale-105 text-sm md:text-base"
+          className="inline-flex items-center gap-1   font-bold px-2 py-2 rounded-full shadow-md transition-all duration-300 hover:scale-105 text-sm md:text-base"
         >
           {/* Icono SVG de WhatsApp */}
           <svg
-            className="w-5 h-5 fill-current"
+            className="w-5 h-5 fill-current text-jomi-green hover:text-pink-chic"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
